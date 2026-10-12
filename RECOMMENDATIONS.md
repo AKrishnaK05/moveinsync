@@ -1,6 +1,4 @@
 # MoveInSync Play Store Rating Recovery Strategy
-## Candidate Assignment — Forward Deployed Engineer (Intern to FTE)
-
 ---
 
 ### Executive Summary
