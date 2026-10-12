@@ -4,6 +4,9 @@ An end-to-end engineering pipeline for scraping, exploring, filtering, AI-classi
 
 > **Primary Submission Deliverable:**  
 > The executive analysis, root-cause diagnosis, and prioritized Day-1 engineering roadmap authored after analyzing the data can be accessed directly in **[RECOMMENDATIONS.md](RECOMMENDATIONS.md)**.
+> 
+> **Live Interactive Telemetry Platform:**  
+> The cloud dashboard is deployed and accessible at: **[moveinsync-rjyw64g3bgrpbysknqhdzd.streamlit.app](https://moveinsync-rjyw64g3bgrpbysknqhdzd.streamlit.app/)**
 
 ---
 

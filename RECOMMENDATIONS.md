@@ -1,4 +1,6 @@
 # MoveInSync Play Store Rating Recovery Strategy
+> **Live Interactive Telemetry Platform**: [https://moveinsync-rjyw64g3bgrpbysknqhdzd.streamlit.app/](https://moveinsync-rjyw64g3bgrpbysknqhdzd.streamlit.app/)
+
 ---
 
 ### Executive Summary
