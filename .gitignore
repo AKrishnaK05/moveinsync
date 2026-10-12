@@ -1,10 +1,7 @@
-# Data directories — large files are not committed
-data/raw/
-data/processed/
-data/labeled/
-
-# Generated outputs — reproducible from data
+# Generated outputs — large artifacts reproducible from scripts
 outputs/exploration/
+
+# Environment & Secrets
 
 # Python
 __pycache__/
