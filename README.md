@@ -211,7 +211,6 @@ The classification engine maps employee commute reviews against 15 domain-specif
 
 ## Technical Highlights for Reviewers
 
-- **Forward Deployed Engineer (FDE) Grounding**: Connects software failures directly to the enterprise employee commute journey (*Shift Roster $\rightarrow$ Booking $\rightarrow$ Live Tracking $\rightarrow$ OTP Boarding*).
 - **Anti-Hallucination Pipeline**: All extracted evidence quotes are verified using exact substring matching against source review text in Python before acceptance.
 - **Atomic Checkpointing**: Checkpoint files are written using OS-level temporary files and atomic replacements (`os.replace`), protecting runs from corruption during process interruption.
 - **Operational Support Audit**: Pinpoints that **95.5% of negative reviews** receive zero developer response, presenting leadership with an immediate non-code operational win.
