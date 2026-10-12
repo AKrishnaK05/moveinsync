@@ -1,0 +1,23 @@
+# Data directories — large files are not committed
+data/raw/
+data/processed/
+data/labeled/
+
+# Generated outputs — reproducible from data
+outputs/exploration/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp

@@ -1,0 +1,14 @@
+Priority,Category,Negative_Reviews,Share_of_Negatives_Pct,Thumbs_Up_Endorsements
+P0 (Immediate / Day 1),APP_RELIABILITY,256,17.1,74
+P0 (Immediate / Day 1),LOGIN_ACCESS,219,14.63,44
+P1 (Sprint / Weeks 1-2),DRIVER_TRANSPORT_OPERATIONS,103,6.88,30
+P1 (Sprint / Weeks 1-2),BOOKING_SCHEDULING,86,5.74,40
+P1 (Sprint / Weeks 1-2),TRACKING_MAPS,83,5.54,37
+P2 (Milestone / Month 1),TIMING_ROUTING,77,5.14,16
+P2 (Milestone / Month 1),CONTACT_SUPPORT,71,4.74,27
+P2 (Milestone / Month 1),USABILITY_ACCESSIBILITY,68,4.54,14
+P2 (Milestone / Month 1),FEATURE_GAP_OR_REMOVAL,57,3.81,26
+P2 (Milestone / Month 1),FEEDBACK_OR_RATING_FLOW,52,3.47,15
+P2 (Milestone / Month 1),NOTIFICATIONS_PERMISSIONS,46,3.07,9
+P2 (Milestone / Month 1),DATA_VISIBILITY,35,2.34,2
+P2 (Milestone / Month 1),POLICY_EXPECTATION_MISMATCH,16,1.07,3

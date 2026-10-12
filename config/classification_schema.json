@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MoveInSyncReviewClassificationV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_id",
+    "labels",
+    "primary_label",
+    "sentiment",
+    "issue_type",
+    "evidence",
+    "confidence",
+    "needs_human_review",
+    "review_note"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "APP_RELIABILITY",
+          "LOGIN_ACCESS",
+          "TRACKING_MAPS",
+          "BOOKING_SCHEDULING",
+          "TIMING_ROUTING",
+          "DRIVER_TRANSPORT_OPERATIONS",
+          "CONTACT_SUPPORT",
+          "NOTIFICATIONS_PERMISSIONS",
+          "USABILITY_ACCESSIBILITY",
+          "FEATURE_GAP_OR_REMOVAL",
+          "POLICY_EXPECTATION_MISMATCH",
+          "DATA_VISIBILITY",
+          "POSITIVE_VALUE",
+          "UNCLEAR_INSUFFICIENT_DETAIL",
+          "FEEDBACK_OR_RATING_FLOW"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "primary_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "APP_RELIABILITY",
+        "LOGIN_ACCESS",
+        "TRACKING_MAPS",
+        "BOOKING_SCHEDULING",
+        "TIMING_ROUTING",
+        "DRIVER_TRANSPORT_OPERATIONS",
+        "CONTACT_SUPPORT",
+        "NOTIFICATIONS_PERMISSIONS",
+        "USABILITY_ACCESSIBILITY",
+        "FEATURE_GAP_OR_REMOVAL",
+        "POLICY_EXPECTATION_MISMATCH",
+        "DATA_VISIBILITY",
+        "POSITIVE_VALUE",
+        "UNCLEAR_INSUFFICIENT_DETAIL",
+        "FEEDBACK_OR_RATING_FLOW",
+        null
+      ]
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "negative",
+        "mixed",
+        "neutral",
+        "positive",
+        "unclear"
+      ]
+    },
+    "issue_type": {
+      "type": "string",
+      "enum": [
+        "APP_SOFTWARE",
+        "OPERATIONS_GROUND",
+        "EMPLOYER_POLICY",
+        "FEATURE_REQUEST",
+        "POSITIVE_ONLY",
+        "GENERIC_OR_UNCLEAR",
+        "MIXED_OR_OTHER"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "text"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": [
+              "APP_RELIABILITY",
+              "LOGIN_ACCESS",
+              "TRACKING_MAPS",
+              "BOOKING_SCHEDULING",
+              "TIMING_ROUTING",
+              "DRIVER_TRANSPORT_OPERATIONS",
+              "CONTACT_SUPPORT",
+              "NOTIFICATIONS_PERMISSIONS",
+              "USABILITY_ACCESSIBILITY",
+              "FEATURE_GAP_OR_REMOVAL",
+              "POLICY_EXPECTATION_MISMATCH",
+              "DATA_VISIBILITY",
+              "POSITIVE_VALUE",
+              "UNCLEAR_INSUFFICIENT_DETAIL",
+              "FEEDBACK_OR_RATING_FLOW"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "needs_human_review": {
+      "type": "boolean"
+    },
+    "review_note": {
+      "type": "string"
+    }
+  }
+}
