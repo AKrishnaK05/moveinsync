@@ -96,8 +96,6 @@ Play Store reviews represent a public customer support touchpoint. Currently:
 
 ### Methodology & Tools Note
 
-*As requested in the assignment ("Alongside it, a short note on how you got there and which tools you used"):*
-
 This analysis was developed using an end-to-end, reproducible data pipeline:
 1. **Data Collection (`pipeline/01_collect.py`)**: Used `google-play-scraper` to scrape all 24,314 historical reviews for `com.moveinsync.ets` with pagination and exponential backoff retry.
 2. **Exploratory Data Analysis (`pipeline/02_explore.py`)**: Used `pandas` and `matplotlib` to analyze long-term trends from 2014 to 2026, generating year-over-year rating distributions and data quality summaries.
